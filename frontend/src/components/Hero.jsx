@@ -13,7 +13,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative h-screen overflow-hidden flex items-center justify-center"
+      className="relative top-10 h-screen overflow-hidden flex items-center justify-center"
     >
       {/* Parallax Background */}
       <motion.div

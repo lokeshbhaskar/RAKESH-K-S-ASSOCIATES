@@ -25,7 +25,7 @@ const Navbar = () => {
         {/* Logo Section */}
         <Link to="/" className="leading-tight">
           <img
-            src={logo}
+            src="./ca-logo.png"
             alt="CA Logo"
             className="h-10 w-auto object-contain"
           />

@@ -1,4 +1,5 @@
 import { motion, useScroll, useTransform } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const { scrollY } = useScroll();
@@ -56,13 +57,19 @@ const Hero = () => {
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row justify-center gap-6">
-          <button className="px-10 py-4 bg-amber-500 text-black font-medium tracking-wide uppercase text-sm hover:bg-amber-400 transition-all duration-300">
+          <a
+            href="tel:+919876543210"
+            className="inline-block px-10 py-4 bg-amber-500 text-black font-medium tracking-wide uppercase text-sm hover:bg-amber-400 transition-all duration-300"
+          >
             Schedule Consultation
-          </button>
-
-          <button className="px-10 py-4 border border-white text-white text-sm tracking-wide uppercase hover:bg-white hover:text-black transition-all duration-300">
+          </a>
+          <Link
+            to="/services"
+            className="inline-block px-10 py-4 border border-white text-white text-sm tracking-wide uppercase hover:bg-white hover:text-black transition-all duration-300"
+          >
             Explore Services
-          </button>
+          </Link>
+
         </div>
       </motion.div>
     </section>

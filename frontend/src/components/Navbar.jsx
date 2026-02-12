@@ -51,12 +51,12 @@ const Navbar = () => {
           ))}
 
           {/* Consultation Button */}
-          <Link
-            to="/contact"
+          <a
+            href="tel:+919654064391"
             className="ml-4 px-6 py-2 border border-black text-black text-xs tracking-widest uppercase hover:bg-black hover:text-white transition duration-300"
           >
             Book Consultation
-          </Link>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -81,14 +81,14 @@ const Navbar = () => {
               {item.name}
             </Link>
           ))}
-
-          <Link
-            to="/contact"
+          <a
+            href="tel:+919876543210"
             className="block px-10 py-4 text-sm bg-black text-white text-center"
             onClick={() => setIsMenuOpen(false)}
           >
             Book Consultation
-          </Link>
+          </a>
+
         </div>
       )}
     </motion.nav>

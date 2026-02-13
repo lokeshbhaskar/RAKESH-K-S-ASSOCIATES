@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { FaAddressBook, FaAddressCard, FaMailBulk, FaMailchimp, FaPhone } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -30,8 +31,8 @@ const Contact = () => {
             className="space-y-6"
           >
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-2xl">
-                📍
+              <div className="w-12 h-12 bg-blue-100 text-blue-900 rounded-lg flex items-center justify-center text-2xl">
+                <FaAddressCard/>
               </div>
               <div>
                 <h3 className="font-bold text-slate-900 mb-1">Office Address</h3>
@@ -42,22 +43,22 @@ const Contact = () => {
             </div>
 
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-2xl">
-                📧
+              <div className="w-12 h-12 bg-blue-100  rounded-lg flex items-center justify-center text-2xl">
+                <FaMailBulk/>
               </div>
               <div>
                 <h3 className="font-bold text-slate-900 mb-1">Email</h3>
-                <p className="text-slate-600">info@cafirm.com</p>
+                <p className="text-slate-600">carakesh@rksassociates.com</p>
               </div>
             </div>
 
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-2xl">
-                📞
+              <FaPhone/>
               </div>
               <div>
                 <h3 className="font-bold text-slate-900 mb-1">Phone</h3>
-                <p className="text-slate-600">+91 98765 43210</p>
+                <p className="text-slate-600">+91 96540 64391</p>
               </div>
             </div>
           </motion.div>

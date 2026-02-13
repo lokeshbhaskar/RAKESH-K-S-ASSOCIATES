@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { FaEnvelope } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -35,24 +36,46 @@ const Navbar = () => {
           </p>
         </Link>
 
-        <div className="hidden md:flex items-center gap-14 text-sm tracking-wide">
-          {menuItems.map((item) => (
-            <Link
-              key={item.name}
-              to={item.path}
-              className="relative text-gray-600 hover:text-black transition duration-300 group"
+        <div className="hidden md:flex flex-col items-end gap-2">
+          <div className="flex items-center gap-14 text-sm tracking-wide">
+            {menuItems.map((item) => (
+              <Link
+                key={item.name}
+                to={item.path}
+                className="relative text-gray-600 hover:text-black transition duration-300 group"
+              >
+                {item.name}
+                <span className="absolute left-0 -bottom-2 w-0 h-[1px] bg-black transition-all duration-300 group-hover:w-full"></span>
+              </Link>
+            ))}
+
+            <a
+              href="tel:+919654064391"
+              className="ml-4 px-6 py-2 border border-black text-black text-xs tracking-widest uppercase hover:bg-black hover:text-white transition duration-300"
             >
-              {item.name}
-              <span className="absolute left-0 -bottom-2 w-0 h-[1px] bg-black transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-          ))}
-          <a
-            href="tel:+919654064391"
-            className="ml-4 px-6 py-2 border border-black text-black text-xs tracking-widest uppercase hover:bg-black hover:text-white transition duration-300"
-          >
-            Book Consultation
-          </a>
+              Book Consultation
+            </a>
+          </div>
+
+          <div className="flex items-center gap-6 text-md tracking-wide text-gray-500">
+            <a
+              href="mailto:carakesh@rksassociates.com"
+              className="flex items-center gap-2 hover:text-black transition"
+            >
+              <FaEnvelope className="text-xs" />
+              <span>carakesh@rksassociates.com</span>
+            </a>
+
+            <span className="hidden lg:inline text-gray-800">|</span>
+            <span className="hidden lg:inline">
+              Bangalore
+            </span>
+
+          </div>
+
+
         </div>
+
 
         <button
           className="md:hidden text-xl text-gray-800"
@@ -61,7 +84,7 @@ const Navbar = () => {
           ☰
         </button>
       </div>
-      
+
       {isMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-100">
           {menuItems.map((item) => (

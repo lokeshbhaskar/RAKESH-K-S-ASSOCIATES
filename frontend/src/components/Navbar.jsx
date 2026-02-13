@@ -1,14 +1,13 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from '../../public/ca-logo.png'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
     { name: "Home", path: "/" },
-    { name: "Services", path: "/services" },
+    { name: "Career", path: "/career" },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
   ];
@@ -20,14 +19,13 @@ const Navbar = () => {
       transition={{ duration: 0.5 }}
       className="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-xl border-b border-gray-100 z-50"
     >
-      <div className="max-w-7xl mx-auto px-10 py-6 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-10 py-3 flex justify-between items-center">
 
-        {/* Logo Section */}
         <Link to="/" className="leading-tight">
           <img
-            src="./ca-logo.png"
+            src="./logo.png"
             alt="CA Logo"
-            className="h-10 w-auto object-contain"
+            className="h-16 w-auto object-contain"
           />
           <h1 className="text-lg tracking-widest font-semibold text-gray-900">
             RAKESH K S & ASSOCIATES
@@ -37,7 +35,6 @@ const Navbar = () => {
           </p>
         </Link>
 
-        {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-14 text-sm tracking-wide">
           {menuItems.map((item) => (
             <Link
@@ -49,8 +46,6 @@ const Navbar = () => {
               <span className="absolute left-0 -bottom-2 w-0 h-[1px] bg-black transition-all duration-300 group-hover:w-full"></span>
             </Link>
           ))}
-
-          {/* Consultation Button */}
           <a
             href="tel:+919654064391"
             className="ml-4 px-6 py-2 border border-black text-black text-xs tracking-widest uppercase hover:bg-black hover:text-white transition duration-300"
@@ -59,7 +54,6 @@ const Navbar = () => {
           </a>
         </div>
 
-        {/* Mobile Menu Button */}
         <button
           className="md:hidden text-xl text-gray-800"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -67,8 +61,7 @@ const Navbar = () => {
           ☰
         </button>
       </div>
-
-      {/* Mobile Menu */}
+      
       {isMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-100">
           {menuItems.map((item) => (

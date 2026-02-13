@@ -11,7 +11,7 @@ const About = () => {
 
         <div className="grid md:grid-cols-2 gap-20 items-center">
 
-          {/* Left Side */}
+          {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -19,27 +19,39 @@ const About = () => {
             viewport={{ once: true }}
           >
             <p className="text-sm tracking-[4px] uppercase text-amber-400 mb-4">
-              About Our Firm
+              About The Firm
             </p>
 
             <h2 className="text-4xl md:text-5xl font-semibold leading-tight mb-8">
-              Why Businesses Trust <br /> Our Expertise
+              Built on Expertise. <br /> Driven by Integrity.
             </h2>
 
+            <p className="text-zinc-400 leading-relaxed mb-8 text-base">
+              <span className="text-white font-medium">
+                RAKESH K S & ASSOCIATES
+              </span>{" "}
+              is a Chartered Accountancy firm established in 2020 by
+              <span className="text-white font-medium">
+                {" "}CA Rakesh Kumar Singh
+              </span>, with a clear vision to provide practical, reliable,
+              and litigation-focused tax and compliance solutions.
+            </p>
+
             <p className="text-zinc-400 leading-relaxed mb-10 text-base">
-              With over 15 years of professional excellence in financial,
-              taxation, and advisory services, we deliver precision,
-              integrity, and strategic insight to every client engagement.
-              Our qualified Chartered Accountants ensure compliance,
-              growth, and long-term financial stability.
+              With over 7 years of professional experience, the firm has
+              developed strong expertise in GST advisory, direct taxation,
+              audit, and regulatory compliance. We are particularly known
+              for handling GST assessments, appeals, scrutiny proceedings,
+              departmental audits, notice replies, and litigation support,
+              representing clients confidently before tax authorities.
             </p>
 
             <div className="space-y-5">
               {[
-                "Experienced & Qualified CA Professionals",
-                "Personalized Strategic Advisory",
-                "Technology-Driven Compliance Solutions",
-                "Strong Ethical & Transparent Practices"
+                "GST Advisory, Assessments & Litigation Support",
+                "Direct Tax Advisory & Scrutiny Handling",
+                "Audit & Regulatory Compliance Expertise",
+                "Client-Centric & Risk-Focused Advisory Approach"
               ].map((item, index) => (
                 <motion.div
                   key={index}
@@ -58,7 +70,7 @@ const About = () => {
             </div>
           </motion.div>
 
-          {/* Right Side Card */}
+          {/* Right Card */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -71,23 +83,28 @@ const About = () => {
 
                 <div>
                   <h3 className="text-xl font-semibold text-amber-400 mb-4 tracking-wide">
-                    Our Mission
+                    Our Approach
                   </h3>
                   <p className="text-zinc-400 text-sm leading-relaxed">
-                    To deliver reliable, ethical, and forward-thinking
-                    financial solutions that empower businesses to
-                    operate confidently in a dynamic economic environment.
+                    Our approach combines deep technical knowledge with
+                    strategic thinking to safeguard clients against tax
+                    risks while ensuring complete statutory compliance.
+                    We focus not just on filing, but on long-term clarity,
+                    protection, and confidence.
                   </p>
                 </div>
 
                 <div className="border-t border-zinc-800 pt-8">
                   <h3 className="text-xl font-semibold text-amber-400 mb-4 tracking-wide">
-                    Our Vision
+                    Our Mission
                   </h3>
                   <p className="text-zinc-400 text-sm leading-relaxed">
-                    To become one of the most trusted Chartered
-                    Accountancy firms by setting benchmarks in
-                    professional excellence, innovation, and client satisfaction.
+                    To provide reliable, transparent, and litigation-focused
+                    GST, taxation, and compliance services that help
+                    businesses and individuals operate with confidence.
+                    We are committed to simplifying complex regulations,
+                    minimising tax risks, and delivering strategic financial
+                    guidance for long-term stability and sustainable growth.
                   </p>
                 </div>
 

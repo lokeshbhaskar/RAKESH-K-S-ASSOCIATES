@@ -37,9 +37,8 @@ const Footer = () => {
 
         {/* Bottom Line */}
         <p className="text-xs tracking-wide text-gray-500">
-          © {new Date().getFullYear()} RAKESH K S & ASSOCIATES. All Rights Reserved.
+          © 2020–{new Date().getFullYear()} RAKESH K S & ASSOCIATES. All Rights Reserved.
         </p>
-
       </div>
     </footer>
   );

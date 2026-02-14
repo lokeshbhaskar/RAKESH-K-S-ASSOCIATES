@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { FaEnvelope } from "react-icons/fa";
+import { FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -11,6 +11,8 @@ const Navbar = () => {
     { name: "Career", path: "/career" },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
+    { name: "Gallery", path: "/gallery" },
+    { name: "Services", path: "/services" }
   ];
 
   return (
@@ -68,7 +70,15 @@ const Navbar = () => {
 
             <span className="hidden lg:inline text-gray-800">|</span>
             <span className="hidden lg:inline">
-              Bangalore
+              <a
+                href="https://www.google.com/maps/place/12%C2%B056'14.5%22N+77%C2%B037'33.2%22E/@12.93736,77.625899,17z/data=!3m1!4b1!4m4!3m3!8m2!3d12.93736!4d77.625899!17m2!4m1!1e3!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDIxMS4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 border border-black rounded-full flex items-center justify-center hover:bg-black hover:text-white transition"
+                title="Open Location"
+              >
+                <FaMapMarkerAlt className="text-sm" />
+              </a>
             </span>
 
           </div>

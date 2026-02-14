@@ -122,6 +122,25 @@ const Services = () => {
             ]}
           />
 
+          {/* Virtual CFO */}
+          <ServiceSection
+            title="Virtual CFO Services"
+            description={[
+              "Our Virtual CFO services are designed to provide businesses with high-level financial leadership and strategic guidance. We partner closely with business owners to strengthen financial systems, improve profitability, and support informed decision-making.",
+              "We assist in strategic financial planning, budgeting, forecasting, and long-term business roadmap development. Our approach combines structured financial insights with proactive advisory to support sustainable and scalable growth.",
+            ]}
+            points={[
+              "Strategic Financial Planning & Forecasting",
+              "Budgeting & Long-Term Business Roadmaps",
+              "Cash Flow Planning & Monitoring",
+              "Working Capital Management",
+              "Cost Optimisation & Profitability Analysis",
+              "MIS Reporting & KPI Tracking",
+              "Financial Risk Assessment & Internal Controls",
+              "Fund Raising & Investor Reporting Support",
+              "Banking Coordination & Financial Due Diligence",
+            ]}
+            highlight="By leveraging structured financial insights and proactive advisory, we help businesses enhance operational efficiency, maintain compliance, improve internal controls, and achieve sustainable and scalable growth."/>
         </div>
       </div>
     </section>

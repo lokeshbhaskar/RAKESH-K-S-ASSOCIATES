@@ -4,46 +4,46 @@ import { Link } from "react-router-dom";
 const Hero = () => {
   const { scrollY } = useScroll();
 
-  const backgroundY = useTransform(scrollY, [0, 600], [0, 180]);
-
+  const backgroundY = useTransform(scrollY, [0, 600], [0, 160]);
   const opacity = useTransform(scrollY, [0, 350], [1, 0]);
-  const scale = useTransform(scrollY, [0, 350], [1, 0.95]);
+  const scale = useTransform(scrollY, [0, 350], [1, 0.96]);
 
   return (
     <section
       id="home"
       className="relative top-10 h-screen overflow-hidden flex items-center justify-center"
     >
-      <motion.div
-        style={{ y: backgroundY }}
-        className="absolute inset-0"
-      >
+      {/* Background Image */}
+      <motion.div style={{ y: backgroundY }} className="absolute inset-0">
         <div
           className="w-full h-[120%] bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1554224155-6726b3ff858f')",
+              // "url('https://images.unsplash.com/photo-1554224155-6726b3ff858f')",
+              "url('https://plus.unsplash.com/premium_photo-1679923813998-6603ee2466c5?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YWNjb3VudGluZ3xlbnwwfHwwfHx8MA%3D%3D"
           }}
         />
       </motion.div>
 
-      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/90" />
+      {/* Premium Overlay */}
+      <div className="absolute  bg-gradient-to-b from-slate-900/80 via-slate-900/70 to-slate-900/90" />
 
+      {/* Content */}
       <motion.div
         style={{ opacity, scale }}
-        className="relative z-10 text-center px-6 max-w-5xl"
+        className="relative z-10 text-center px-6 max-w-6xl"
       >
-        <p className="text-amber-400 tracking-[4px] uppercase text-xs mb-6">
+        <p className="text-yellow-200 font-bold tracking-[5px] uppercase text-sm mb-6">
           Chartered Accountants
         </p>
 
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold text-white leading-tight mb-8">
-          TAX & C	ONSULTING
-          <br />
+        {/* Firm Name / Main Title */}
+        <h1 className="text-white text-5xl md:text-7xl lg:text-8xl font-semibold leading-tight mb-10">
+          TAX & CONSULTING
         </h1>
 
-        <p className="text-gray-300 text-base md:text-lg max-w-2xl mx-auto leading-relaxed mb-10">
-          Expert GST, Direct Tax, Audit, Compliance & Strategic Advisory & Accounting Services for Businesses of All Sizes.
+        <p className="text-white text-base md:text-lg max-w-2xl mx-auto leading-relaxed mb-12">
+          Expert GST, Direct Tax, Audit, Compliance & Strategic Advisory & Accounting Services.
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-6">
@@ -53,13 +53,13 @@ const Hero = () => {
           >
             Schedule Consultation
           </a>
+
           <Link
             to="/services"
-            className="inline-block px-10 py-4 border border-white text-white text-sm tracking-wide uppercase hover:bg-white hover:text-black transition-all duration-300"
+            className="inline-block px-10 py-4 border border-white text-white text-sm tracking-wide uppercase hover:bg-white hover:text-slate-900 transition-all duration-300"
           >
             Explore Services
           </Link>
-
         </div>
       </motion.div>
     </section>

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { FaEnvelope } from "react-icons/fa";
+import { FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -11,6 +11,8 @@ const Navbar = () => {
     { name: "Career", path: "/career" },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
+    { name: "Gallery", path: "/gallery" },
+    { name: "Services", path: "/services" }
   ];
 
   return (
@@ -68,7 +70,15 @@ const Navbar = () => {
 
             <span className="hidden lg:inline text-gray-800">|</span>
             <span className="hidden lg:inline">
-              Bangalore
+              <a
+                href="https://share.google/atvzX9FCH329HYJVG"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 border border-black rounded-full flex items-center justify-center hover:bg-black hover:text-white transition"
+                title="Open Location"
+              >
+                <FaMapMarkerAlt className="text-sm" />
+              </a>
             </span>
 
           </div>
@@ -98,7 +108,7 @@ const Navbar = () => {
             </Link>
           ))}
           <a
-            href="tel:+919876543210"
+            href="tel:+919654064391"
             className="block px-10 py-4 text-sm bg-black text-white text-center"
             onClick={() => setIsMenuOpen(false)}
           >

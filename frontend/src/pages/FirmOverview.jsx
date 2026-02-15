@@ -24,14 +24,14 @@ const FirmOverview = () => {
 
         <div className="space-y-10 text-zinc-400 leading-8 text-sm md:text-base">
 
-          <p>
+          <p className="text-lg">
             Rakesh K S & Associates is a Chartered Accountancy firm established in
             2020, providing comprehensive services across GST, Direct Taxation,
             Audit, Accounting, and statutory compliance for businesses,
             professionals, and individuals.
           </p>
 
-          <p>
+          <p className="text-lg">
             With over <span className="text-white font-medium">7 years of professional expertise</span>,
             the firm has built a strong reputation for its in-depth command over
             GST advisory and litigation support. Our experience includes handling
@@ -39,7 +39,7 @@ const FirmOverview = () => {
             representation before tax authorities with precision and confidence.
           </p>
 
-          <p>
+          <p className="text-lg">
             We adopt a balanced approach that combines technical excellence with
             practical, business-oriented insights.
             <span className="text-white font-medium">
@@ -49,7 +49,7 @@ const FirmOverview = () => {
             </span>
           </p>
 
-          <p>
+          <p className="text-lg">
             In an evolving regulatory and economic environment, our objective is
             to enable clients to operate with clarity, confidence, and compliance,
             while supporting sustainable growth and long-term financial stability.
@@ -59,11 +59,11 @@ const FirmOverview = () => {
               RAKESH K S & ASSOCIATES
             </p>
 
-            <p className="text-zinc-400 text-sm leading-7">
+            <p className="text-zinc-400 text-md leading-7">
               Founded by{" "}
-              <span className="text-amber-400 font-medium">
+              <span className="text-lg text-amber-400 font-medium">
                 CA Rakesh Kumar Singh
-              </span>, the firm is led with a commitment to integrity,
+              </span >, the firm is led with a commitment to integrity,
               professionalism, and consistent value delivery across diverse
               financial and advisory engagements.
             </p>

@@ -4,22 +4,19 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="relative py-40 bg-gradient-to-b from-black via-zinc-900 to-black text-white overflow-hidden"
+      className="relative  pt-64 min-h-screen bg-gradient-to-b from-black via-zinc-900 to-black text-white overflow-hidden"
     >
-      {/* Subtle Background Glow */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-40 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-amber-500/10 blur-[180px] rounded-full" />
       </div>
 
       <div className="relative max-w-6xl mx-auto px-6">
-
-        {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-28"
+          className="text-center mb-16 md:mb-20"
         >
           <p className="text-amber-400 text-xs tracking-[4px] uppercase mb-4">
             Our Core Services
@@ -31,9 +28,7 @@ const Services = () => {
 
           <div className="w-24 h-[1px] bg-amber-400 mx-auto mt-6"></div>
         </motion.div>
-
-        {/* Services */}
-        <div className="space-y-28">
+        <div className="space-y-12 md:space-y-16">
 
           <ServiceSection
             title="GST Advisory, Compliance & Litigation Support"
@@ -140,7 +135,7 @@ const Services = () => {
               "Fund Raising & Investor Reporting Support",
               "Banking Coordination & Financial Due Diligence",
             ]}
-            highlight="By leveraging structured financial insights and proactive advisory, we help businesses enhance operational efficiency, maintain compliance, improve internal controls, and achieve sustainable and scalable growth."/>
+            highlight="By leveraging structured financial insights and proactive advisory, we help businesses enhance operational efficiency, maintain compliance, improve internal controls, and achieve sustainable and scalable growth." />
         </div>
       </div>
     </section>

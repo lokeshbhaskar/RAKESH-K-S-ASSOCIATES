@@ -2,9 +2,8 @@ import { motion } from "framer-motion";
 
 const CareerPage = () => {
     return (
-        <section className="bg-black text-white">
-
-            <div className="relative mt-24 py-16 px-6 md:px-20 text-center">
+        <section className="pt-64 bg-black text-white">
+            <div className="relative py-16 px-6 md:px-20 text-center">
                 <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
                     Build Your Career With Us
                 </h1>

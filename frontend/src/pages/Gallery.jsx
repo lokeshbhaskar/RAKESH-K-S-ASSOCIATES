@@ -26,7 +26,7 @@ const galleryData = [
 
 const Gallery = () => {
   return (
-    <section className="py-36 bg-white">
+    <section className="pt-64 py-36 bg-white">
       <div className="max-w-7xl mx-auto px-6 space-y-28">
 
         {/* Heading */}

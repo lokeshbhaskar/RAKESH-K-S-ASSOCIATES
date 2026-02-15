@@ -11,38 +11,30 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative top-10 h-screen overflow-hidden flex items-center justify-center"
+      className="relative pt-[160px] md:pt-[220px] min-h-screen overflow-hidden flex items-center justify-center"
     >
-      {/* Background Image */}
       <motion.div style={{ y: backgroundY }} className="absolute inset-0">
         <div
           className="w-full h-[120%] bg-cover bg-center"
           style={{
-            backgroundImage:
-              // "url('https://images.unsplash.com/photo-1554224155-6726b3ff858f')",
-              "url('https://plus.unsplash.com/premium_photo-1679923813998-6603ee2466c5?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YWNjb3VudGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+            backgroundImage:"url('https://plus.unsplash.com/premium_photo-1679923813998-6603ee2466c5?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YWNjb3VudGluZ3xlbnwwfHwwfHx8MA%3D%3D"
           }}
         />
       </motion.div>
-
-      {/* Premium Overlay */}
       <div className="absolute  bg-gradient-to-b from-slate-900/80 via-slate-900/70 to-slate-900/90" />
-
-      {/* Content */}
       <motion.div
         style={{ opacity, scale }}
-        className="relative z-10 text-center px-6 max-w-6xl"
+        className="relative top-10 md:top-0 z-10 text-center px-6 max-w-6xl"
       >
-        <p className="text-yellow-200 font-bold tracking-[5px] uppercase text-sm mb-6">
+        <p className="text-yellow-200 font-bold tracking-[5px] uppercase text-sm mb-2  md:mb-6">
           Chartered Accountants
         </p>
 
-        {/* Firm Name / Main Title */}
-        <h1 className="text-white text-5xl md:text-7xl lg:text-8xl font-semibold leading-tight mb-10">
+        <h1 className="text-white text-5xl md:text-7xl lg:text-8xl font-semibold leading-tight mb-4 md:mb-10">
           TAX & CONSULTING
         </h1>
 
-        <p className="text-white text-base md:text-lg max-w-2xl mx-auto leading-relaxed mb-12">
+        <p className="text-white text-base md:text-lg max-w-2xl mx-auto leading-relaxed mb-4 md:mb-12">
           Expert GST, Direct Tax, Audit, Compliance & Strategic Advisory & Accounting Services.
         </p>
 

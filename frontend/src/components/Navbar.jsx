@@ -8,11 +8,11 @@ const Navbar = () => {
 
   const menuItems = [
     { name: "Home", path: "/" },
-    { name: "Career", path: "/career" },
+    { name: "Services", path: "/services" },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
     { name: "Gallery", path: "/gallery" },
-    { name: "Services", path: "/services" }
+    { name: "Career", path: "/career" },
   ];
 
   return (
@@ -61,11 +61,11 @@ const Navbar = () => {
 
           <div className="flex items-center gap-6 text-md tracking-wide text-gray-500">
             <a
-              href="mailto:carakesh@rksassociates.com"
+              href="mailto:rksoffice@ksrakesh.com"
               className="flex items-center gap-2 hover:text-black transition"
             >
               <FaEnvelope className="text-xs" />
-              <span>carakesh@rksassociates.com</span>
+              <span>rksoffice@ksrakesh.com</span>
             </a>
 
             <span className="hidden lg:inline text-gray-800">|</span>

@@ -75,10 +75,10 @@ const Contact = () => {
                   Email
                 </h3>
                 <a
-                  href="mailto:carakesh@rksassociates.com"
+                  href="mailto:rksoffice@ksrakesh.com"  
                   className="text-sm text-slate-600 hover:text-blue-900 transition"
                 >
-                  carakesh@rksassociates.com
+                   rksoffice@ksrakesh.com
                 </a>
               </div>
             </div>
